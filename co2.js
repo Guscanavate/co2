@@ -3,6 +3,7 @@ console.log (value);
 
 
 let kms = document.getElementById ("kms");
+kms = parseInt("kms",10);
 console.log (kms);
 
 let ToyotaRAV4 = ['2.5 2e','n',6.30];
@@ -41,24 +42,28 @@ const gasoil = 2.61 ;
 // Emisiones en Kg de CO2 por litro de gasoil consumido
 
 let consumo = (cpm*kms)/100;
+console.log(tc);
 
-
-if ( tc == 'n' ) {combus = (consumo*nafta)} 
+if ( tc == "n" ) {combus = (consumo*nafta)} 
 else { (combus = consumo*gasoil)
 };
 
-combus = parseInt(combus, 10);
+combus = parseFloat("combus");
+console.log (combus);
+
+
 consumo = (kms*cpm);
 
-let combustible = document.createElement('p')
-combustible.innerText=consumo
-let digaConsumo = document.getElementById("combus")
-digaConsumo.append(consumo)
+
+let combustible = document.createElement('p');
+// combustible.innerText=consumo;
+let digaConsumo = document.getElementById("combus");
+digaConsumo.append(consumo);
 
 let emitido = document.createElement('p')
 emitido.innerText=combus
 let emision = document.getElementById("emision")
-emision.append(combus)
+emision.append(combus);
 
 
 
