@@ -1,10 +1,9 @@
-let value = document.getElementsByClassName ("form-select");
-
+let value = document.getElementById ("vehiculo");
 console.log (value);
 
-let kms = document.getElementsByClassName ("input-group-text");
-console.log (kms);
 
+let kms = document.getElementById ("kms");
+console.log (kms);
 
 let ToyotaRAV4 = ['2.5 2e','n',6.30];
 let CitroënCElysee = ['1.6 HDi TD','d',6.35];
@@ -43,8 +42,23 @@ const gasoil = 2.61 ;
 
 let consumo = (cpm*kms)/100;
 
-if ( tc == 1 ) { alert ('Las emisiones del período son de : ' + consumo*nafta)} 
-else { alert ('Las emisiones del período son de : '+ consumo*gasoil)};
 
-let combus = document.createElementById ("combus");
-combus.innerHTML = <h2>cpm</h2>;
+if ( tc == 'n' ) {combus = (consumo*nafta)} 
+else { (combus = consumo*gasoil)
+};
+
+combus = parseInt(combus, 10);
+consumo = (kms*cpm);
+
+let combustible = document.createElement('p')
+combustible.innerText=consumo
+let digaConsumo = document.getElementById("combus")
+digaConsumo.append(consumo)
+
+let emitido = document.createElement('p')
+emitido.innerText=combus
+let emision = document.getElementById("emision")
+emision.append(combus)
+
+
+

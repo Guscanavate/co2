@@ -17,7 +17,7 @@
     <br>
 
     <div class="selector">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" id="vehiculo" aria-label="Default select example">
             <option selected>SELECCIONE SU VEHICULO</option>
             <option value="1">ToyotaRAV4</option>
             <option value="2">CitroënCElysee</option>
@@ -31,27 +31,59 @@
     </div>
     <br>
     <div class="selector">
-        <div class="input-group mb-3">
-            <span class="input-group-text" id=kms>Ingrese los kms. recorridos</span>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-default">
+        <div class="input-group mb-2">
+            <span class="input-group-text mx-4">Ingrese los kms. recorridos</span>
+            <input type="text" class="form-control" id="kms">
         </div>
     </div>
     <br>
-    <div class="centrar">
+    
         <div class="container">
             <div class="row">
-                <div class="col-3"><img src="./images/combustible.png" alt="Litros quemados"></div>
+                <div class="col"></div>
+                <div class="col-3"><img src="./images/surtidor.png" alt="Litros quemados"></div>
                 <div class="col-1"></div>
-                <div class="col-4"><img src="./images/co2.png"></div>
-                <div class="col-1"></div>
-                <div class="col-3"><img src="./images/emisiones.png" alt="Kgs emitidos"></div>
+                <div class="col"><img src="./images/nubegris.png" alt="Kgs de CO2 emitidos"></div>
+                <div class="col"></div>
             </div>
-        </div>
-    </div>
+            <div class="row">
+                <br>        
+             </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-1 justify-content-center">
+                    <p class="combus" id="combus"></p>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-1 justify-content-center">
+                    <p class="emision" id="emision"></p>
+                </div>
+                <div class="col"></div>
+             </div>
 
-    <h2 id "combus"></h2>
-    <h2 class="emision"></h2>
+             <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3 justify-content-center">
+                    <p>Combustible consumido</p>
+                </div>
+                <div class="col"></div>
+                <div class="col-4 justify-content-center">
+                    <p>Kgs de CO2 emitidos</p>
+                </div>
+                <div class="col"></div>
+             </div>
+        </div>
+
+
+    
+    <!-- <div class="combus">
+        <p id="combus"></p>
+    </div>
+    
+    <div class="emision">
+        <p id="emision"></p>
+    </div> -->
+    
 
     <script src="./co2.js"></script>
 
