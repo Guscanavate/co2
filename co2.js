@@ -1,10 +1,11 @@
-let value = document.getElementById ("vehiculo");
-console.log (value);
+
+let value = document.getElementById("vehiculo");
 
 
 let kms = document.getElementById ("kms");
+
 kms = parseInt("kms",10);
-console.log (kms);
+
 
 let ToyotaRAV4 = ['2.5 2e','n',6.30];
 let CitroënCElysee = ['1.6 HDi TD','d',6.35];
@@ -15,14 +16,14 @@ let CitroënC4Lounge = ['1.6 HDi','d',7.30];
 let FiatMobi = ['1.0','n',7.50];
 let DS7Crossback = ['1.6 HDi','d',7.55];
 
-if (value = 1) tc = ToyotaRAV4 [1];
-else if (value = 2) tc = CitroënCElysee [1];
-else if (value = 3) tc = FordMondeo [1];
-else if (value = 4) tc = ChevroletOnix [1];
-else if (value = 5) tc = VWUp [1];
-else if (value = 6) tc = CitroënC4Lounge [1];
-else if (value = 7) tc = FIATMobi [1];
-else if (value = 8) tc = DS7Crossback [1];
+if (value = "1") tc = ToyotaRAV4 [1];
+else if (value = "2") tc = CitroënCElysee [1];
+else if (value = "3") tc = FordMondeo [1];
+else if (value = "4") tc = ChevroletOnix [1];
+else if (value = "5") tc = VWUp [1];
+else if (value = "6") tc = CitroënC4Lounge [1];
+else if (value = "7") tc = FIATMobi [1];
+else if (value = "8") tc = DS7Crossback [1];
 else (alert= 'Debe seleccionar un vehículo de las lista');
 
 if (value = 1) cpm = ToyotaRAV4 [2];
